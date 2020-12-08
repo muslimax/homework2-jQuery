@@ -106,14 +106,14 @@ function jQ(params) {
     }
     this.contain = function (className) {
         if (typeof className == "string") {
-            for (let i = 0; i < this.element.length; i++) {
+           
                 if (this.element[0].classList.contains(className)) {
                     return true
                     // console.log(true);
                 } else {
                     return false
                     //  console.log(false);
-                }
+                
             }
         }
         return this
@@ -131,10 +131,10 @@ function jQ(params) {
 
         }
     }
-    this.children = function (className) {
+    this.childrenEl = function () {
         for (let i = 0; i < this.element.length; i++) {
-            return this.element[i].children()
-        //     console.log(this.element[i].children);
+            return this.element[i].children
+            // console.log(this.element[i].children);
         }
       }
 

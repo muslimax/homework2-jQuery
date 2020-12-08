@@ -31,7 +31,7 @@ $("div").contain("active")
 $("div").hoverFun(function () {
   
 }).prevEl()
-// $("h2").children()
+$("h2").childrenEl()
 
 
 
