@@ -108,9 +108,11 @@ function jQ(params) {
         if (typeof className == "string") {
             for (let i = 0; i < this.element.length; i++) {
                 if (this.element[0].classList.contains(className)) {
-                    return console.log(true);
+                    return true
+                    // console.log(true);
                 } else {
-                    return console.log(false);
+                    return false
+                    //  console.log(false);
                 }
             }
         }
